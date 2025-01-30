@@ -1,3 +1,3 @@
 # challenge-amigo-secreto
 
-- Estado del proyecto: En construcción.
+🚧 Estado del proyecto: En construcción 🚧
