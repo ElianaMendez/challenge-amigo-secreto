@@ -1,27 +1,34 @@
 var amigos = [];
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
-function agregarAmigo() {
-    let amigo = document.getElementById('amigo').value;
-    limpiarCaja();
+const listaAmigos = document.getElementById('listaAmigos');
 
-    if (amigo == "")
-    {
-        alert('Por favor inserte un nombre');
+function agregarAmigo() {
+    let amigo = document.getElementById('amigo').value.trim();
+
+    if (amigo === "") {
+        alert('Por favor inserte un nombre válido');
         return;
-    } else {
-      amigos.push(amigo);
-      const li = document.createElement("li");
-      li.appendChild(document.createTextNode(amigo));
-      listaAmigos.appendChild(li);
     }
     
+    if (amigos.includes(amigo)) {
+        alert('Ese amigo ya está en la lista');
+        return;
+    }
+
+    amigos.push(amigo);
+    actualizarLista();  //Actualiza la lista después de agregar a un amigo
+    limpiarCaja();
+}
+
+function actualizarLista() {
+    listaAmigos.innerHTML = "";  // Limpiar la lista antes de actualizar
+
+    for (let i = 0; i < amigos.length; i++) {
+        const li = document.createElement("li");
+        li.textContent = amigos[i];
+        listaAmigos.appendChild(li);
+    }
 }
 
 function limpiarCaja() {
-    document.querySelector('#amigo').value = '';
+    document.getElementById('amigo').value = '';
 }
- 
-        //Agregar nuevo amigo a la lista
-        //let nuevoAmigo = document.createElement("li");
-        //nuevoAmigo.textContent = amigoIngresado;
-        //listaAmigos.appendChild(nuevoAmigo);
