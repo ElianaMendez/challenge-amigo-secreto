@@ -39,7 +39,10 @@ function limpiarCaja() {
 function sortearAmigo() {
     if (cantidadDeAmigos != 0) {
         let amigoElegido = Math.floor(Math.random()*cantidadDeAmigos);
-        return amigos[amigoElegido];  
+            
+        document.getElementById('resultado').textContent = amigos[amigoElegido];
+        amigos[amigoElegido].innerHTML;
+        
     }
      
 }
