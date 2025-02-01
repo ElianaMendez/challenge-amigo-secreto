@@ -9,6 +9,12 @@
 - `Visualizar lista`: Los nombres ingresados aparecerán en una lista debajo del campo de entrada.
 - `Sorteo aleatorio`: Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
 
+## 🏛️ Estructura del repositorio
+- `assets`: Carpeta de archivos de imagen utilizados en el proyecto.
+- `app.js`: Archivo de código Javascript, desarrollado para la aplicación web.
+- `index.html`: Archivo con la estructura visual de la aplicación web, en HTML.
+- `style.css`: Archivo de estilos utilizados en la aplicación web.
+
 ## ✔️ Tecnologías utilizadas
 - Javascript
 - HTML
