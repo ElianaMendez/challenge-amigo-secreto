@@ -8,3 +8,8 @@
 - `Validar entrada`: Si el campo de texto está vacío, el programa mostrará una alerta pidiendo un nombre válido.
 - `Visualizar lista`: Los nombres ingresados aparecerán en una lista debajo del campo de entrada.
 - `Sorteo aleatorio`: Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
+
+## ✔️ Tecnologías utilizadas
+- Javascript
+- HTML
+- CSS
